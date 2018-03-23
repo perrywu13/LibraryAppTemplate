@@ -1,8 +1,8 @@
-/**
- * Member class
- */
 public class Member {
-
+    String name;
+    int birthYear;
+    Address address;
+    int year = 2018;
 
     /**
      * getAge() : int
@@ -11,7 +11,10 @@ public class Member {
      *          returns the member's age as an int.
      */
 
-
+    public static int getAge(){
+        int age = year - birthYear;
+        return age;
+    }
 
 
     /**
@@ -20,10 +23,14 @@ public class Member {
      * "Reading" consists of printing out any appropriate message
      * containing the title of the book.
      *
-     * @param book
+     * @param one
      *          The book to read.
      */
 
+    public static void read(Book one){
+       System.out.println("The book I am reading is" + one.title);
+
+    }
 
 
 }
